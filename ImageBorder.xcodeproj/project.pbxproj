@@ -18,6 +18,9 @@
 		83212C8B17896E87005EACC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83212C8A17896E87005EACC1 /* Default-568h@2x.png */; };
 		83212C8E17896E87005EACC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83212C8D17896E87005EACC1 /* ViewController.m */; };
 		83212C9117896E87005EACC1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83212C8F17896E87005EACC1 /* ViewController.xib */; };
+		83212C9A17896EDE005EACC1 /* UIImageViewAddBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83212C9917896EDE005EACC1 /* UIImageViewAddBorder.m */; };
+		83212C9C17897107005EACC1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83212C9B17897107005EACC1 /* QuartzCore.framework */; };
+		83212CA01789780A005EACC1 /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83212C9F1789780A005EACC1 /* photo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		83212C8C17896E87005EACC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		83212C8D17896E87005EACC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		83212C9017896E87005EACC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		83212C9817896EDE005EACC1 /* UIImageViewAddBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewAddBorder.h; sourceTree = "<group>"; };
+		83212C9917896EDE005EACC1 /* UIImageViewAddBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewAddBorder.m; sourceTree = "<group>"; };
+		83212C9B17897107005EACC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83212C9F1789780A005EACC1 /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83212C9C17897107005EACC1 /* QuartzCore.framework in Frameworks */,
 				83212C7517896E87005EACC1 /* UIKit.framework in Frameworks */,
 				83212C7717896E87005EACC1 /* Foundation.framework in Frameworks */,
 				83212C7917896E87005EACC1 /* CoreGraphics.framework in Frameworks */,
@@ -56,7 +64,8 @@
 		83212C6817896E87005EACC1 = {
 			isa = PBXGroup;
 			children = (
-				83212C7A17896E87005EACC1 /* ImageBorder */,
+				83212C9717896E9B005EACC1 /* UIImageBorder */,
+				83212C7A17896E87005EACC1 /* ImageBorderExample */,
 				83212C7317896E87005EACC1 /* Frameworks */,
 				83212C7217896E87005EACC1 /* Products */,
 			);
@@ -73,6 +82,7 @@
 		83212C7317896E87005EACC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83212C9B17897107005EACC1 /* QuartzCore.framework */,
 				83212C7417896E87005EACC1 /* UIKit.framework */,
 				83212C7617896E87005EACC1 /* Foundation.framework */,
 				83212C7817896E87005EACC1 /* CoreGraphics.framework */,
@@ -80,7 +90,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		83212C7A17896E87005EACC1 /* ImageBorder */ = {
+		83212C7A17896E87005EACC1 /* ImageBorderExample */ = {
 			isa = PBXGroup;
 			children = (
 				83212C8317896E87005EACC1 /* AppDelegate.h */,
@@ -88,8 +98,10 @@
 				83212C8C17896E87005EACC1 /* ViewController.h */,
 				83212C8D17896E87005EACC1 /* ViewController.m */,
 				83212C8F17896E87005EACC1 /* ViewController.xib */,
+				83212C9F1789780A005EACC1 /* photo.jpg */,
 				83212C7B17896E87005EACC1 /* Supporting Files */,
 			);
+			name = ImageBorderExample;
 			path = ImageBorder;
 			sourceTree = "<group>";
 		};
@@ -105,6 +117,15 @@
 				83212C8A17896E87005EACC1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83212C9717896E9B005EACC1 /* UIImageBorder */ = {
+			isa = PBXGroup;
+			children = (
+				83212C9817896EDE005EACC1 /* UIImageViewAddBorder.h */,
+				83212C9917896EDE005EACC1 /* UIImageViewAddBorder.m */,
+			);
+			name = UIImageBorder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +184,7 @@
 				83212C8917896E87005EACC1 /* Default@2x.png in Resources */,
 				83212C8B17896E87005EACC1 /* Default-568h@2x.png in Resources */,
 				83212C9117896E87005EACC1 /* ViewController.xib in Resources */,
+				83212CA01789780A005EACC1 /* photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +198,7 @@
 				83212C8117896E87005EACC1 /* main.m in Sources */,
 				83212C8517896E87005EACC1 /* AppDelegate.m in Sources */,
 				83212C8E17896E87005EACC1 /* ViewController.m in Sources */,
+				83212C9A17896EDE005EACC1 /* UIImageViewAddBorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

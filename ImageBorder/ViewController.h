@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImageViewAddBorder.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UIImageView *myImageView;
+@property (strong, nonatomic) IBOutlet UIButton *addBorderBtn;
 
 @end

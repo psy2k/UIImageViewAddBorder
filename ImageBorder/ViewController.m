@@ -14,10 +14,37 @@
 
 @implementation ViewController
 
+@synthesize myImageView, addBorderBtn;
+
+BOOL borderApplied = NO;
+
 - (void)viewDidLoad
 {
+    UIImage* myImage = [UIImage imageNamed:@"photo.jpg"];
+    self.myImageView.autoresizingMask =  UIViewAutoresizingNone;
+    self.myImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.myImageView.clipsToBounds = YES;
+    [self.myImageView setImage:myImage borderWidth:0.0f];
+   
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)addBorder:(id)sender {
+    
+    if (!borderApplied){
+        borderApplied = YES;
+        UIImage* myImage = [UIImage imageNamed:@"photo.jpg"];
+        [self.myImageView setImage:myImage borderWidth:3.0];
+    } else {
+        borderApplied = NO;
+        UIImage* myImage = [UIImage imageNamed:@"photo.jpg"];
+        self.myImageView.autoresizingMask =  UIViewAutoresizingNone;
+        self.myImageView.contentMode = UIViewContentModeScaleAspectFit;
+        self.myImageView.clipsToBounds = YES;
+        [self.myImageView setImage:myImage borderWidth:0.0f];
+
+    }
 }
 
 - (void)didReceiveMemoryWarning
