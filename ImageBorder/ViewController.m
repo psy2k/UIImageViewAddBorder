@@ -24,7 +24,7 @@ BOOL borderApplied = NO;
     self.myImageView.autoresizingMask =  UIViewAutoresizingNone;
     self.myImageView.contentMode = UIViewContentModeScaleAspectFit;
     self.myImageView.clipsToBounds = YES;
-    [self.myImageView setImage:myImage borderWidth:0.0f];
+    [self.myImageView setImage:myImage borderWidth:0.0f setRoundedCorners:NO];
    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -35,14 +35,14 @@ BOOL borderApplied = NO;
     if (!borderApplied){
         borderApplied = YES;
         UIImage* myImage = [UIImage imageNamed:@"photo.jpg"];
-        [self.myImageView setImage:myImage borderWidth:3.0];
+        [self.myImageView setImage:myImage borderWidth:3.0 setRoundedCorners:YES];
     } else {
         borderApplied = NO;
         UIImage* myImage = [UIImage imageNamed:@"photo.jpg"];
         self.myImageView.autoresizingMask =  UIViewAutoresizingNone;
         self.myImageView.contentMode = UIViewContentModeScaleAspectFit;
         self.myImageView.clipsToBounds = YES;
-        [self.myImageView setImage:myImage borderWidth:0.0f];
+        [self.myImageView setImage:myImage borderWidth:0.0f setRoundedCorners:NO];
 
     }
 }

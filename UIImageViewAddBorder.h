@@ -10,6 +10,6 @@
 
 @interface UIImageView (ImageViewBorder)
 
--(void)setImage:(UIImage*)image borderWidth:(CGFloat)borderWidth;
+-(void)setImage:(UIImage*)image borderWidth:(CGFloat)borderWidth setRoundedCorners:(BOOL)setRoundedCorners;
 
 @end

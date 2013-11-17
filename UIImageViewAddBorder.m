@@ -56,12 +56,24 @@
     
 }
 
+-(BOOL)isCircle:(BOOL)isCircle {
+    if (isCircle){
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
--(void)setImage:(UIImage*)image borderWidth:(CGFloat)borderWidth
+
+-(void)setImage:(UIImage*)image borderWidth:(CGFloat)borderWidth setRoundedCorners:(BOOL)setRoundedCorners
 {
     [self addImageViewBorder:borderWidth];
     UIImage* scaledDownImage = [self scaleDownImage:image];
     self.image = scaledDownImage;
+    if (setRoundedCorners){
+    self.layer.cornerRadius = self.image.size.width / 8;
+    self.layer.masksToBounds = YES;
+    }
 }
 
 @end
