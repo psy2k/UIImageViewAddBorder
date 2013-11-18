@@ -1,13 +1,15 @@
 UIImageViewAddBorder
 ====================
 
-Simple class that extends UIImageView interface, so we can easily add borders to UIImageViews. 
+Simple class that extends UIImageView interface, so we can easily add borders and rounded corners to UIImageViews. 
 
 To use it in your project, simple add UIImageViewAddBorder.h and .m files to your project. Then import them when you want to use them and call:
 
-[myImageView setImage:myImage borderWidth:3.0f];
+[myImageView setImage:myImage borderWidth:3.0f setRoundedCorners:YES];
 
-In the borderWidth: of course you can set any float value you like.
+In borderWidth: of course you can set any float value you like.
+
+Set setRoundedCorners to YES or NO.
 
 The projects includes an example to see it in action.
 
